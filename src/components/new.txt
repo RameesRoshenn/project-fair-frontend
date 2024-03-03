@@ -1,0 +1,47 @@
+import React from 'react'
+import Backgroundpic from '../Pictures/pexels-stanislav-kondratiev-2908984.jpg'
+import './Home.css';
+function Home() {
+
+    const divStyle = {
+        backgroundImage: `linear-gradient(rgba(33, 11, 11, 0.7), rgba(0, 0, 0, 0.7)), url(${Backgroundpic})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '700px',
+    };
+    const h1Style = {
+        color: 'white',
+        fontSize: '60px',
+        textShadow: '3px 3px 5px rgba(255,255,0,0.3)',
+        fontFamily: "'Kanit', sans-serif",
+    };
+
+    const pstyle={
+        textShadow: '3px 3px 5px rgba(255,255,0,0.3)'
+    };
+
+    return (
+
+        <div style={divStyle}>
+            <h1 style={{ ...h1Style, paddingTop: '225px' }} className='d-flex align-items-center  justify-content-center  fw-bolder  '>LIBRARY</h1>
+            <h2 style={h1Style} className='d-flex align-items-center  justify-content-center fw-bolder   '> MANAGEMENT SYSTEM</h2>
+           
+           
+           
+            <div className=' d-flex justify-content-center align-items-center '>
+                <p style={{...pstyle, fontSize: '15px' , color:'white' , paddingTop:'230px'}}>"Efficiently organize and access a vast collection of literature with our intuitive library management system, streamlining cataloging and enhancing user experience."</p>
+
+               
+            </div>
+
+            <div className=' d-flex  justify-content-center  align-items-center '> 
+            <button  className='btn btn-success  rounded '>Explore Now</button>
+            </div>
+
+        </div>
+
+
+    )
+}
+
+export default Home;
